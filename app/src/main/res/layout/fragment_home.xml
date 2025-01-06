@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="icu.nullptr.hidemyapplist.ui.fragment.HomeFragment">
+    tools:context="icu.weigui.hidemyapplist.ui.fragment.HomeFragment">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@id/ad_banner"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.appbar.AppBarLayout
@@ -132,7 +132,7 @@
                             android:text="@string/home_manage"
                             android:textAppearance="?textAppearanceTitleMedium" />
 
-                        <icu.nullptr.hidemyapplist.ui.view.ListItemView
+                        <icu.weigui.hidemyapplist.ui.view.ListItemView
                             android:id="@+id/detection_test"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -141,7 +141,7 @@
 
                         <include layout="@layout/line" />
 
-                        <icu.nullptr.hidemyapplist.ui.view.ListItemView
+                        <icu.weigui.hidemyapplist.ui.view.ListItemView
                             android:id="@+id/template_manage"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -150,7 +150,7 @@
 
                         <include layout="@layout/line" />
 
-                        <icu.nullptr.hidemyapplist.ui.view.ListItemView
+                        <icu.weigui.hidemyapplist.ui.view.ListItemView
                             android:id="@+id/app_manage"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -180,7 +180,7 @@
                             android:text="@string/home_backup_and_restore"
                             android:textAppearance="?textAppearanceTitleMedium" />
 
-                        <icu.nullptr.hidemyapplist.ui.view.ListItemView
+                        <icu.weigui.hidemyapplist.ui.view.ListItemView
                             android:id="@+id/backup_config"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -189,7 +189,7 @@
 
                         <include layout="@layout/line" />
 
-                        <icu.nullptr.hidemyapplist.ui.view.ListItemView
+                        <icu.weigui.hidemyapplist.ui.view.ListItemView
                             android:id="@+id/restore_config"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -201,12 +201,4 @@
         </androidx.core.widget.NestedScrollView>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/ad_banner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-7935522387526005/9113700045"
-        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
